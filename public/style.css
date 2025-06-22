@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+body {
+  line-height: 1.5;
+  background-color: #4392F1;
+  font-family: system-ui;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 200;
+}
+
+.pomodoro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.timer {
+  font-stretch: 35%;
+  font-size: 290px;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+  display: flex;
+  -webkit-text-stroke: 1px #ffffff;
+  paint-order: stroke fill;
+  color: rgba(255, 255, 255, .3);
+}
+
+.separator {
+  font-size: .7em;
+  font-weight: 300;
+  margin-top: .11em;
+  text-align: center;
+  width: .15em;
+}
+
+.button {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, .3);
+  border: 1px solid #ffffff;
+  color: currentColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  padding: 0;
+}
+
+.controls {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
